@@ -25,10 +25,10 @@
 
   <div class="container-fluid p-0">
    <div class="row">
-    <div class="col-md-2">
+    <div class="col-md-2 bg-info">
        <!-- menu -->
-       <div class = "panel panel-primary">
-          <div class="list-group panel">
+       <!--<div class = "panel panel-info">
+          <div class="list-group panel-primary">
             <a href="#" class="list-group-item list-group-item-success" data-parent="#MainMenu">Item 1</a>
             <a href="#" class="list-group-item list-group-item-success" data-parent="#MainMenu">Item 2</a>
             <a href="#demo3" class="list-group-item list-group-item-success" data-toggle="collapse" data-parent="#MainMenu">Item 3 <i class="fa fa-caret-down"></i></a>
@@ -54,19 +54,17 @@
               <a href="" class="list-group-item">Subitem 3</a>
             </div>
           </div>
-        </div>
+        </div> -->
     </div>
-  <div class="col-md-10">
+  <div class="col-md-9">
       <section class="resume-section p-3 p-lg-5 d-flex d-column" id="about">
         <div class="my-auto">
-          <h1 class="mb-0">Yolanda
-            <span class="text-primary">De La Hoz Simon</span>
+         <div class="row">
+          <h1 class="col">Yolanda
+            <span class="text-info">De La Hoz Simon</span>
           </h1>
-          <div class="subheading mb-5">Software Engineer ·
-            <a href="mailto:name@email.com">yolanda93h@gmail.com</a>
-          </div>
-          <p class="mb-5">I am experienced in leveraging agile frameworks to provide a robust synopsis for high level overviews. Iterative approaches to corporate strategy foster collaborative thinking to further the overall value proposition.</p>
-          <ul class="list-inline list-social-icons mb-0">
+          <div class="col">
+          <ul class="list-inline list-social-icons">
             <li class="list-inline-item">
               <a href="#">
                 <span class="fa-stack fa-lg">
@@ -100,7 +98,13 @@
               </a>
             </li>
           </ul>
-        </div>
+          </div>
+         </div>
+         <div class="subheading mb-5">Software Engineer ·
+           <a href="mailto:name@email.com">yolanda93h@gmail.com</a>
+         </div>
+        <p class="mb-5">I am experienced in leveraging agile frameworks to provide a robust synopsis for high level overviews. Iterative approaches to corporate strategy foster collaborative thinking to further the overall value proposition.</p>
+       </div>
       </section>
 
       <section class="resume-section p-3 p-lg-5 d-flex flex-column" id="experience">
@@ -285,6 +289,39 @@
               Place - James Buchanan High School - Hackathon 2005</li>
           </ul>
         </div>
+      </section>
+      <section class="resume-section p-3 p-lg-5 d-flex flex-column" id="contact-form">
+        <link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/jquery.bootstrapvalidator/0.5.2/css/bootstrapValidator.min.css"/>
+        <script type="text/javascript" src="http://cdnjs.cloudflare.com/ajax/libs/jquery.bootstrapvalidator/0.5.2/js/bootstrapValidator.min.js"></script>
+        <div class="my-auto">
+          <h2 class="mb-5">Contact</h2>
+        <form role="form" id="contact-form" class="contact-form">
+          <div class="row">
+            <div class="col-md-6">
+              <div class="form-group">
+                <input type="text" class="form-control" name="Name" autocomplete="off" id="Name" placeholder="Name">
+              </div>
+            </div>
+            <div class="col-md-6">
+              <div class="form-group">
+                <input type="email" class="form-control" name="email" autocomplete="off" id="email" placeholder="E-mail">
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-12">
+              <div class="form-group">
+                <textarea class="form-control textarea" rows="3" name="Message" id="Message" placeholder="Message"></textarea>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-12">
+              <button type="submit" class="btn main-btn pull-right">Send a message</button>
+            </div>
+          </div>
+        </form>
+                </div>
       </section>
       </div>
     </div>
